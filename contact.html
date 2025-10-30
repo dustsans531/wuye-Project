@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们 - 小区物业管理系统</title>
+    <link rel="stylesheet" href="./css/contact.css">
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <i class="fa fa-home"></i>
+                    <span>智慧物业</span>
+                </div>
+                
+                <!-- 桌面导航 -->
+                <nav class="main-nav">
+                    <a href="#home" >首页</a>
+                    <a href="#service">服务</a>
+                    <a href="#notice">公告</a>
+                    <a href="#fee">缴费</a>
+                    <a href="#contact"  class="active">联系</a>
+                </nav>
+                
+                <!-- 用户区域 -->
+                <div class="user-area">
+                    <button class="ring"><i class="fa fa-bell-o"></i></button>
+                    <div class="user-tx">
+                        <img src="./images/QQ.png" alt="用户头像">
+                        <span>业主您好</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 移动端导航 -->
+            <div class="mobile-nav">
+                <a href="#home">首页</a>
+                <a href="#service">服务</a>
+                <a href="#notice">公告</a>
+                <a href="#fee">缴费</a>
+                <a href="#contact">联系</a>
+            </div>
+    </header>
+    
+    <!-- 主要内容 -->
+    <div class="main">
+        <div class="left">
+            <div class="contact-card">
+                <h3>联系方式</h3>
+                <ul class="contact-list">
+                    <li>
+                        <a href="#">
+                            <img src="./images/地点.png" alt="地点图标">
+                            地址:
+                        </a>
+                        <p>哈尔滨市宾西县宾西大学城9号哈尔滨信息工程学院</p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/电话.png" alt="电话图标">
+                            电话:
+                        </a>
+                        <p>400-123-4567 (24小时服务热线)<br>010-8888-7777z (办公室)</p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/邮件.png" alt="邮件图标">
+                            邮箱:
+                        </a>
+                        <p>contact@example.com (客服邮箱)<br>support@example.com (技术支持)</p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/时钟.png" alt="时钟图标">
+                            工作时间:
+                        </a>
+                        <p>周一至周五: 9:00-18:00<br>周末: 10:00-16:00<br>紧急维修: 24小时服务</p>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="contact-form">
+                <h3>在线留言</h3>
+                <form id="messageForm">
+                    <div class="form-group">
+                        <label for="name">您的姓名</label>
+                        <input type="text" id="name" placeholder="请输入您的姓名" required>
+                        <div class="error-message" id="nameError">请输入您的姓名</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">联系电话</label>
+                        <input type="tel" id="phone" placeholder="请输入您的联系电话" required>
+                        <div class="error-message" id="phoneError">请输入有效的联系电话</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">电子邮箱</label>
+                        <input type="email" id="email" placeholder="请输入您的电子邮箱" required>
+                        <div class="error-message" id="emailError">请输入有效的电子邮箱</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">主题</label>
+                        <input type="text" id="subject" placeholder="请输入留言主题" required>
+                        <div class="error-message" id="subjectError">请输入留言主题</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">留言内容</label>
+                        <textarea id="message" rows="5" placeholder="请输入您要咨询或反馈的内容" required></textarea>
+                        <div class="error-message" id="messageError">请输入留言内容</div>
+                    </div>
+                    <button type="submit" class="submit" id="submit">提交留言</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="right">
+            <div class="map">
+                <h3>我们的位置</h3>
+                <div class="map-image" id="mapContainer">
+                    <img src="./images/地图.jpg" alt="小区位置地图">
+                </div>
+                <div class="map-link">
+                    <a href="#" id="navigationBtn">导航到小区物业</a>
+                </div>
+            </div>
+            
+            <div class="contact-card">
+                <h3>服务承诺</h3>
+                <div class="service-promise">
+                    <p><strong>快速响应</strong> - 接到报修后30分钟内响应</p> 
+                    <p><strong>专业服务</strong> - 持证上岗，专业解决各类问题</p>       
+                    <p><strong>透明收费</strong> - 所有服务项目明码标价</p>                
+                    <p><strong>满意度保障</strong> - 服务不满意不收费</p>
+                </div>
+            </div>
+            
+            <div class="contact-card emergency-contact">
+                <h3>紧急联系方式</h3>
+                <ul class="contact-list">
+                    <li>
+                        <a href="#">
+                            火警:
+                        </a>
+                        <p>119 (消防队)<br>物业紧急热线: 400-123-1190</p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            报警:
+                        </a>
+                        <p>110 (公安局)<br>物业安保: 400-123-1100</p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            急救:
+                        </a>
+                        <p>120 (急救中心)<br>物业医疗协助: 400-123-1200</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="contact-card">
+        <h3>更多信息</h3>
+        <div class="subpage-links">
+            <a href="team.html" class="subpage-link">
+                <i class="fa fa-users"></i>
+                <span>物业团队</span>
+            </a>
+            <a href="service-hours.html" class="subpage-link">
+                <i class="fa fa-clock-o"></i>
+                <span>服务时间详情</span>
+            </a>
+            <a href="faq.html" class="subpage-link">
+                <i class="fa fa-question-circle"></i>
+                <span>常见问题解答</span>
+            </a>
+        </div>
+    </div>
+    
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fa fa-home"></i>
+                    <span>智慧物业</span>
+                    <p>打造智慧、安全、舒适的现代化社区</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fa fa-weixin"></i></a>
+                        <a href="#"><i class="fa fa-weibo"></i></a>
+                        <a href="#"><i class="fa fa-qq"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="#home">首页</a></li>
+                        <li><a href="#service">物业服务</a></li>
+                        <li><a href="#notice">小区公告</a></li>
+                        <li><a href="#fee">费用缴纳</a></li>
+                        <li><a href="#contact">联系我们</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>服务支持</h4>
+                    <ul>
+                        <li><a href="#">常见问题</a></li>
+                        <li><a href="#">业主手册</a></li>
+                        <li><a href="#">物业服务条款</a></li>
+                        <li><a href="#">投诉建议</a></li>
+                        <li><a href="#">紧急联系</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>联系方式</h4>
+                    <p><i class="fa fa-map-marker"></i> 哈尔滨市宾西县宾西大学城9号哈尔滨信息工程学院</p>
+                    <p><i class="fa fa-phone"></i> 010-8888-7777</p>
+                    <p><i class="fa fa-envelope-o"></i> property@zhjy.com</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>© 2023 智慧物业有限公司 版权所有 | 京ICP备12345678号</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- 花朵效果和感谢信息 -->
+    <div class="flower-overlay" id="flowerOverlay"></div>
+    <div class="thank-you-message" id="thankYouMessage">
+        <p>感谢您的反馈！</p>
+    </div>
+    
+    <!-- 表单验证提示 -->
+    <div class="validation-message" id="validationMessage">
+        请完善您的留言
+    </div>
+    
+    <!-- 高德地图 -->
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=2.0&key=e9fc922ea5b8e633b4f0a3044f2ec1de"></script>
+    <script type="text/javascript">
+        // 初始化地图
+        var map = new AMap.Map('mapContainer', {
+            zoom: 15, //级别
+            center: [127.212747, 45.74351], //中心点坐标
+            viewMode: '2D' //使用2D视图
+        });
+        
+        // 添加标记点
+        var marker = new AMap.Marker({
+            position: [127.212747, 45.74351], // 标记点位置
+            title: '小区物业',
+            map: map
+        });
+        
+        // 创建信息窗口
+        var infoWindow = new AMap.InfoWindow({
+            content: '<div style="padding: 10px; font-size:10px; color: #333;">' +
+                     '<div style="font-weight: bold; margin-bottom: 5px; color: #0081ff;">小区物业' +'</div>'+'<div>地址:哈尔滨市宾西县宾西大学城9号哈尔滨信息工程学院</div>'+'<div>联系电话:010-8888-7777</dov>'+'</div>',
+            offset: new AMap.Pixel(0, -30)
+        });
+        
+        // 标记点点击事件
+        marker.on('click', function() {
+            infoWindow.open(map, marker.getPosition());
+        });
+        
+        // 页面加载后自动打开信息窗口
+        setTimeout(function() {
+            infoWindow.open(map, marker.getPosition());
+        }, 1000);
+        
+        // 导航按钮点击事件
+        document.getElementById('navigationBtn').addEventListener('click', function(e) {
+            e.preventDefault();
+            navigateTo('小区物业', 45.74351, 127.212747);
+        });
+        
+        // 跳转到高德地图导航
+        function navigateTo(name, lat, lng) {
+            // 高德地图URL Scheme
+            const amapUrl = `amapuri://route/plan/?dlat=${lat}&dlon=${lng}&dname=${encodeURIComponent(name)}&dev=0&t=0`;
+            
+            // 高德地图Web版URL（备用）
+            const webUrl = `https://uri.amap.com/navigation?to=${lng},${lat},${encodeURIComponent(name)}&mode=car&policy=1&src=mypage&coordinate=gaode&callnative=1`;
+            
+            // 尝试打开App，如果失败则打开Web版
+            window.location.href = amapUrl;
+            
+            // 如果1秒后页面仍然没有跳转，则打开Web版
+            setTimeout(function() {
+                window.location.href = webUrl;
+            }, 1);
+        }
+    </script>
+    
+    <script type="text/javascript">
+        // 等待DOM加载完成
+        document.addEventListener('DOMContentLoaded', function() {
+            // 导航栏滚动效果
+            const navbar = document.querySelector('.navbar');
+            let lastScrollTop = 0;
+            window.addEventListener('scroll', function() {
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                
+                // 导航栏高度变化
+                if (scrollTop > 100) {
+                    navbar.style.padding = '8px 0';
+                } else {
+                    navbar.style.padding = '0';
+                }
+                
+                lastScrollTop = scrollTop;
+            });
+            
+            // 表单提交处理
+            document.getElementById('messageForm').addEventListener('submit', function(e) {
+                e.preventDefault(); // 阻止表单默认提交
+                
+                // 验证表单字段
+                const name = document.getElementById('name').value.trim();
+                const phone = document.getElementById('phone').value.trim();
+                const email = document.getElementById('email').value.trim();
+                const subject = document.getElementById('subject').value.trim();
+                const message = document.getElementById('message').value.trim();
+                
+                let isValid = true;
+                
+                // 重置错误状态
+                document.querySelectorAll('.error-message').forEach(el => {
+                    el.style.display = 'none';
+                });
+                document.querySelectorAll('input, textarea').forEach(el => {
+                    el.classList.remove('input-error');
+                });
+                
+                // 验证姓名
+                if (name === '') {
+                    document.getElementById('nameError').style.display = 'block';
+                    document.getElementById('name').classList.add('input-error');
+                    isValid = false;
+                }
+                
+                // 验证电话
+                if (phone === '') {
+                    document.getElementById('phoneError').style.display = 'block';
+                    document.getElementById('phone').classList.add('input-error');
+                    isValid = false;
+                }
+                
+                // 验证邮箱
+                if (email === '') {
+                    document.getElementById('emailError').style.display = 'block';
+                    document.getElementById('email').classList.add('input-error');
+                    isValid = false;
+                } else if (!validateEmail(email)) {
+                    document.getElementById('emailError').textContent = '请输入有效的电子邮箱地址';
+                    document.getElementById('emailError').style.display = 'block';
+                    document.getElementById('email').classList.add('input-error');
+                    isValid = false;
+                }
+                
+                // 验证主题
+                if (subject === '') {
+                    document.getElementById('subjectError').style.display = 'block';
+                    document.getElementById('subject').classList.add('input-error');
+                    isValid = false;
+                }
+                
+                // 验证留言内容
+                if (message === '') {
+                    document.getElementById('messageError').style.display = 'block';
+                    document.getElementById('message').classList.add('input-error');
+                    isValid = false;
+                }
+                
+                // 如果验证不通过，显示提示信息
+                if (!isValid) {
+                    const validationMessage = document.getElementById('validationMessage');
+                    validationMessage.style.display = 'block';
+                    
+                    // 3秒后隐藏提示信息
+                    setTimeout(() => {
+                        validationMessage.style.display = 'none';
+                    }, 3000);
+                    return;
+                }
+                
+                // 如果验证通过，执行原来的花朵效果
+                showThankYouEffect();
+            });
+            
+            // 邮箱验证函数
+            function validateEmail(email) {
+                const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                return re.test(String(email).toLowerCase());
+            }
+            
+            // 显示感谢效果
+            function showThankYouEffect() {
+                // 显示感谢信息
+                var thankYouMessage = document.getElementById('thankYouMessage');
+                thankYouMessage.style.display = 'block';
+                
+                // 显示花朵遮罩层
+                var flowerOverlay = document.getElementById('flowerOverlay');
+                flowerOverlay.style.display = 'block';
+                
+                // 创建花朵
+                var flowers = ['🌸', '🌺', '🌷', '🌹', '💐', '🥀', '🌻', '🌼'];
+                
+                // 创建更多花朵 - 100朵
+                for (let i = 0; i < 100; i++) {
+                    setTimeout(() => {
+                        const flower = document.createElement('div');
+                        
+                        // 随机决定是否是大型花朵
+                        const isLarge = Math.random() > 0.7;
+                        flower.className = isLarge ? 'flower flower-large' : 'flower';
+                        
+                        flower.innerHTML = flowers[Math.floor(Math.random() * flowers.length)];
+                        
+                        // 随机位置 - 从屏幕底部开始
+                        const left = Math.random() * 100;
+                        
+                        // 随机大小 - 更大的尺寸范围
+                        const size = isLarge ? 
+                            Math.random() * 40 + 60 :  // 大型花朵: 60-100px
+                            Math.random() * 30 + 40;   // 普通花朵: 40-70px
+                        
+                        // 随机动画持续时间
+                        const duration = Math.random() * 4 + 4; // 4-8秒
+                        
+                        // 随机延迟开始
+                        const delay = Math.random() * 2;
+                        
+                        flower.style.left = `${left}%`;
+                        flower.style.fontSize = `${size}px`;
+                        flower.style.animationDuration = `${duration}s`;
+                        flower.style.animationDelay = `${delay}s`;
+                        
+                        flowerOverlay.appendChild(flower);
+                        
+                        // 动画结束后移除花朵
+                        setTimeout(() => {
+                            if (flower.parentNode) {
+                                flower.remove();
+                            }
+                        }, (duration + delay) * 1000);
+                    }, i * 50); // 花朵依次出现
+                }
+                
+                // 6秒后隐藏感谢信息和花朵遮罩
+                setTimeout(() => {
+                    thankYouMessage.style.display = 'none';
+                    flowerOverlay.style.display = 'none';
+                    
+                    // 清除所有剩余的花朵
+                    while (flowerOverlay.firstChild) {
+                        flowerOverlay.removeChild(flowerOverlay.firstChild);
+                    }
+                    
+                    // 重置表单
+                    document.getElementById('messageForm').reset();
+                }, 6000);
+            }
+        });
+    </script>
+</body>
+</html>

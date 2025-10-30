@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>物业团队 - 物业管理中心</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <link rel="stylesheet" href="./css/team.css">
+   <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- 页面标题 -->
+    <div class="page-header">
+        <div class="container">
+            <h1 class="page-title">物业团队</h1>
+            <p class="page-description">认识我们专业的物业管理团队，我们致力于为您提供最优质的服务</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- 子页面导航卡片 -->
+        <div class="contact-card">
+            <h3>更多信息</h3>
+            <div class="subpage-links">
+                <a href="team.html" class="subpage-link">
+                    <i class="fa fa-users"></i>
+                    <span>物业团队</span>
+                    <i class="fa fa-chevron-right"></i>
+                </a>
+                <a href="service-hours.html" class="subpage-link">
+                    <i class="fa fa-clock-o"></i>
+                    <span>服务时间详情</span>
+                    <i class="fa fa-chevron-right"></i>
+                </a>
+                 
+                <a href="faq.html" class="subpage-link">
+                    <i class="fa fa-question-circle"></i>
+                    <span>常见问题解答</span>
+                    <i class="fa fa-chevron-right"></i>
+                </a>
+				<a href="./contact.html" class="subpage-link">
+					<span>返回</span>
+					<i class="fa fa-chevron-right"></i>
+				</a>
+            </div>
+        </div>
+
+        <!-- 团队介绍 -->
+        <div class="content">
+            <h2>我们的团队</h2>
+            <p>我们的物业管理团队由经验丰富的专业人士组成，涵盖物业管理、维修保养、客户服务和安全管理等多个领域。我们致力于为业主和住户提供高效、专业、贴心的服务。</p>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">24</div>
+                    <div class="stat-label">团队成员</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">8</div>
+                    <div class="stat-label">服务年限</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">客户满意度</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">15min</div>
+                    <div class="stat-label">平均响应时间</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 部门筛选 -->
+        <div class="content">
+            <h2>团队成员</h2>
+            <p>按部门筛选团队成员：</p>
+            
+            <div class="department-filter">
+                <button class="filter-btn active" data-department="all">全部</button>
+                <button class="filter-btn" data-department="management">管理团队</button>
+                <button class="filter-btn" data-department="maintenance">维修团队</button>
+                <button class="filter-btn" data-department="security">安保团队</button>
+                <button class="filter-btn" data-department="customer-service">客服团队</button>
+            </div>
+            
+            <div class="team-grid">
+                <!-- 管理团队成员 -->
+                <div class="team-member" data-department="management">
+                    <div class="member-avatar">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3 class="member-name">张明</h3>
+                    <div class="member-role">物业经理</div>
+                    <div class="member-department">管理团队</div>
+                    <div class="member-contact">
+                        <i class="fas fa-phone"></i> 138-0013-8000
+                    </div>
+                    <div class="member-contact">
+                        <i class="fas fa-envelope"></i> zhangming@property.com
+                    </div>
+                </div>
+                
+                <div class="team-member" data-department="management">
+                    <div class="member-avatar">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3 class="member-name">李芳</h3>
+                    <div class="member-role">副经理</div>
+                    <div class="member-department">管理团队</div>
+                    <div class="member-contact">
+                        <i class="fas fa-phone"></i> 138-0013-8001
+                    </div>
+                    <div class="member-contact">
+                        <i class="fas fa-envelope"></i> lifang@property.com
+                    </div>
+                </div>
+                
+                <!-- 维修团队成员 -->
+                <div class="team-member" data-department="maintenance">
+                    <div class="member-avatar">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="member-name">王强</h3>
+                    <div class="member-role">维修主管</div>
+                    <div class="member-department">维修团队</div>
+                    <div class="member-contact">
+                        <i class="fas fa-phone"></i> 138-0013-8002
+                    </div>
+                    <div class="member-contact">
+                        <i class="fas fa-envelope"></i> wangqiang@property.com
+                    </div>
+                </div>
+                
+                <div class="team-member" data-department="maintenance">
+                    <div class="member-avatar">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="member-name">赵亮</h3>
+                    <div class="member-role">维修技师</div>
+                    <div class="member-department">维修团队</div>
+                    <div class="member-contact">
+                        <i class="fas fa-phone"></i> 138-0013-8003
+                    </div>
+                    <div class="member-contact">
+                        <i class="fas fa-envelope"></i> zhaoliang@property.com
+                    </div>
+                </div>
+                
+                <div class="team-member" data-department="maintenance">
+                    <div class="member-avatar">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="member-name">刘伟</h3>
+                    <div class="member-role">电工</div>
+                    <div class="member-department">维修团队</div>
+                    <div class="member-contact">
+                        <i class="fas fa-phone"></i> 138-0013-8004
+                    </div>
+                    <div class="member-contact">
+                        <i class="fas fa-envelope"></i> liuwei@property.com
+                    </div>
+                </div>
+                
+                <!-- 安保团队成员 -->
+                <div class="team-member" data-department="security">
+                    <div class="member-avatar">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="member-name">陈刚</h3>
+                    <div class="member-role">安保队长</div>
+                    <div class="member-department">安保团队</div>
+                    <div class="member-contact">
+                        <i class="fas fa-phone"></i> 138-0013-8005
+                    </div>
+                    <div class="member-contact">
+                        <i class="fas fa-envelope"></i> chengang@property.com
+                    </div>
+                </div>
+                
+                <div class="team-member" data-department="security">
+                    <div class="member-avatar">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="member-name">周涛</h3>
+                    <div class="member-role">安保员</div>
+                    <div class="member-department">安保团队</div>
+                    <div class="member-contact">
+                        <i class="fas fa-phone"></i> 138-0013-8006
+                    </div>
+                    <div class="member-contact">
+                        <i class="fas fa-envelope"></i> zhoutao@property.com
+                    </div>
+                </div>
+                
+                <!-- 客服团队成员 -->
+                <div class="team-member" data-department="customer-service">
+                    <div class="member-avatar">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="member-name">杨雪</h3>
+                    <div class="member-role">客服主管</div>
+                    <div class="member-department">客服团队</div>
+                    <div class="member-contact">
+                        <i class="fas fa-phone"></i> 138-0013-8007
+                    </div>
+                    <div class="member-contact">
+                        <i class="fas fa-envelope"></i> yangxue@property.com
+                    </div>
+                </div>
+                
+                <div class="team-member" data-department="customer-service">
+                    <div class="member-avatar">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="member-name">孙丽</h3>
+                    <div class="member-role">客服专员</div>
+                    <div class="member-department">客服团队</div>
+                    <div class="member-contact">
+                        <i class="fas fa-phone"></i> 138-0013-8008
+                    </div>
+                    <div class="member-contact">
+                        <i class="fas fa-envelope"></i> sunli@property.com
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 组织结构 -->
+        <div class="content">
+            <h2>团队结构</h2>
+            <p>我们的团队采用扁平化管理结构，确保高效沟通和快速响应：</p>
+            
+            <div class="org-chart">
+                <div class="org-level">
+                    <div class="org-node manager">
+                        <h4>张明</h4>
+                        <p>物业经理</p>
+                    </div>
+                </div>
+                
+                <div class="org-level">
+                    <div class="org-node">
+                        <h4>李芳</h4>
+                        <p>副经理</p>
+                    </div>
+                </div>
+                
+                <div class="org-level">
+                    <div class="org-node">
+                        <h4>王强</h4>
+                        <p>维修主管</p>
+                    </div>
+                    <div class="org-node">
+                        <h4>陈刚</h4>
+                        <p>安保队长</p>
+                    </div>
+                    <div class="org-node">
+                        <h4>杨雪</h4>
+                        <p>客服主管</p>
+                    </div>
+                </div>
+                
+                <div class="org-level">
+                    <div class="org-node">
+                        <h4>赵亮</h4>
+                        <p>维修技师</p>
+                    </div>
+                    <div class="org-node">
+                        <h4>刘伟</h4>
+                        <p>电工</p>
+                    </div>
+                    <div class="org-node">
+                        <h4>周涛</h4>
+                        <p>安保员</p>
+                    </div>
+                    <div class="org-node">
+                        <h4>孙丽</h4>
+                        <p>客服专员</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ 
+	<!-- 页脚 -->
+	<footer class="footer">
+	        <div class="container">
+	            <div class="footer-content">
+	                <div class="footer-logo">
+	                    <i class="fa fa-home"></i>
+	                    <span>智慧物业</span>
+	                    <p>打造智慧、安全、舒适的现代化社区</p>
+	                    <div class="footer-social">
+	                        <a href="#"><i class="fa fa-weixin"></i></a>
+	                        <a href="#"><i class="fa fa-weibo"></i></a>
+	                        <a href="#"><i class="fa fa-qq"></i></a>
+	                    </div>
+	                </div>
+	                
+	                <div class="footer-links">
+	                    <h4>快速链接</h4>
+	                    <ul>
+	                        <li><a href="#home">首页</a></li>
+	                        <li><a href="#service">物业服务</a></li>
+	                        <li><a href="#notice">小区公告</a></li>
+	                        <li><a href="#fee">费用缴纳</a></li>
+	                        <li><a href="#contact">联系我们</a></li>
+	                    </ul>
+	                </div>
+	                
+	                <div class="footer-links">
+	                    <h4>服务支持</h4>
+	                    <ul>
+	                        <li><a href="#">常见问题</a></li>
+	                        <li><a href="#">业主手册</a></li>
+	                        <li><a href="#">物业服务条款</a></li>
+	                        <li><a href="#">投诉建议</a></li>
+	                        <li><a href="#">紧急联系</a></li>
+	                    </ul>
+	                </div>
+	                
+	                <div class="footer-contact">
+	                    <h4>联系方式</h4>
+	                    <p><i class="fa fa-map-marker"></i> 哈尔滨市宾西县宾西大学城9号哈尔滨信息工程学院</p>
+	                    <p><i class="fa fa-phone"></i> 010-8888-7777</p>
+	                    <p><i class="fa fa-envelope-o"></i> property@zhjy.com</p>
+	                </div>
+	            </div>
+	            
+	            <div class="copyright">
+	                <p>© 2023 智慧物业有限公司 版权所有 | 京ICP备12345678号</p>
+	            </div>
+	        </div>
+	    </footer>
+
+    <script>
+        // 部门筛选功能
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const teamMembers = document.querySelectorAll('.team-member');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // 移除所有按钮的active类
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // 为当前点击的按钮添加active类
+                    this.classList.add('active');
+                    
+                    const department = this.getAttribute('data-department');
+                    
+                    // 显示/隐藏团队成员
+                    teamMembers.forEach(member => {
+                        if (department === 'all' || member.getAttribute('data-department') === department) {
+                            member.style.display = 'block';
+                        } else {
+                            member.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // 模拟页面切换效果
+            const navLinks = document.querySelectorAll('.nav-links a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    if (!this.classList.contains('active') && this.getAttribute('href').endsWith('.html')) {
+                        e.preventDefault();
+                        const pageName = this.getAttribute('href').replace('.html', '');
+                        alert(`即将跳转到${getPageTitle(pageName)}页面`);
+                        // 实际应用中这里应该是页面跳转
+                        // window.location.href = this.getAttribute('href');
+                    }
+                });
+            });
+            
+            function getPageTitle(page) {
+                const pageTitles = {
+                    'index': '首页',
+                    'team': '物业团队',
+                    'service-hours': '服务时间详情',
+                    'complaint-process': '投诉与建议流程',
+                    'faq': '常见问题解答'
+                };
+                return pageTitles[page] || '未知页面';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>常见问题解答 - 物业管理中心</title>
+	<link rel="stylesheet" href="./css/faq.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <!-- 页面标题 -->
+    <div class="page-header">
+        <div class="container">
+            <h1 class="page-title">常见问题解答</h1>
+            <p class="page-description">在这里您可以找到关于物业服务的常见问题及解答。如果找不到您需要的答案，请随时联系我们。</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- 子页面导航卡片 -->
+        <div class="contact-card">
+            <h3>更多信息</h3>
+            <div class="subpage-links">
+                <a href="team.html" class="subpage-link">
+                    <i class="fa fa-users"></i>
+                    <span>物业团队</span>
+                    <i class="fa fa-chevron-right"></i>
+                </a>
+                <a href="service-hours.html" class="subpage-link">
+                    <i class="fa fa-clock-o"></i>
+                    <span>服务时间详情</span>
+                    <i class="fa fa-chevron-right"></i>
+                </a>
+                 
+                <a href="faq.html" class="subpage-link">
+                    <i class="fa fa-question-circle"></i>
+                    <span>常见问题解答</span>
+                    <i class="fa fa-chevron-right"></i>
+                </a>
+				<a href="./contact.html" class="subpage-link">
+					<span>返回</span>
+					<i class="fa fa-chevron-right"></i>
+				</a>
+            </div>
+        </div>
+
+
+        <!-- 热门问题 -->
+        <div class="content">
+            <h2>热门问题</h2>
+            <p>以下是一些业主和住户最常询问的问题：</p>
+            
+            <div class="popular-questions">
+                <div class="popular-question" data-target="faq-1">
+                    <h4><i class="fas fa-question-circle"></i> 如何缴纳物业费？</h4>
+                    <p>了解物业费的缴纳方式和时间</p>
+                </div>
+                
+                <div class="popular-question" data-target="faq-3">
+                    <h4><i class="fas fa-question-circle"></i> 如何进行报修？</h4>
+                    <p>家居维修和公共设施报修流程</p>
+                </div>
+                
+                <div class="popular-question" data-target="faq-7">
+                    <h4><i class="fas fa-question-circle"></i> 访客停车如何收费？</h4>
+                    <p>了解访客停车政策和收费标准</p>
+                </div>
+                
+                <div class="popular-question" data-target="faq-10">
+                    <h4><i class="fas fa-question-circle"></i> 如何申请装修？</h4>
+                    <p>装修申请流程和注意事项</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 分类导航 -->
+        <div class="content">
+            <h2>问题分类</h2>
+            <div class="category-nav">
+                <button class="category-btn active" data-category="all">全部问题</button>
+                <button class="category-btn" data-category="payment">费用缴纳</button>
+                <button class="category-btn" data-category="repair">维修服务</button>
+                <button class="category-btn" data-category="security">安全管理</button>
+                <button class="category-btn" data-category="facility">公共设施</button>
+                <button class="category-btn" data-category="other">其他问题</button>
+            </div>
+        </div>
+
+        <!-- FAQ列表 -->
+        <div class="content">
+            <h2>常见问题解答</h2>
+            
+            <!-- 费用缴纳类问题 -->
+            <div class="faq-category" data-category="payment">
+                <h3><i class="fas fa-money-bill-wave"></i> 费用缴纳</h3>
+                
+                <div class="faq-item active" id="faq-1">
+                    <div class="faq-question">
+                        <span>如何缴纳物业费？有哪些缴费方式？</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>您可以通过以下方式缴纳物业费：</p>
+                        <ul>
+                            <li><strong>线上支付：</strong>通过物业微信公众号或APP在线支付</li>
+                            <li><strong>银行代扣：</strong>与指定银行签订代扣协议，自动扣款</li>
+                            <li><strong>物业中心：</strong>前往物业服务中心现金或刷卡支付</li>
+                            <li><strong>银行转账：</strong>通过网银或柜台转账至物业公司账户</li>
+                        </ul>
+                        <p>物业费缴纳时间为每月1日至15日，逾期将按日收取千分之三的滞纳金。</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" id="faq-2">
+                    <div class="faq-question">
+                        <span>物业费包含哪些项目？</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>物业费主要包括以下项目：</p>
+                        <ul>
+                            <li>公共区域清洁卫生服务</li>
+                            <li>绿化养护服务</li>
+                            <li>公共设施维护（电梯、楼道照明等）</li>
+                            <li>安保服务及监控系统维护</li>
+                            <li>物业管理人员的工资福利</li>
+                            <li>公共水电费用</li>
+                            <li>物业管理办公费用</li>
+                        </ul>
+                        <p>不包括个人家居维修、个人水电费等。</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 维修服务类问题 -->
+            <div class="faq-category" data-category="repair">
+                <h3><i class="fas fa-tools"></i> 维修服务</h3>
+                
+                <div class="faq-item" id="faq-3">
+                    <div class="faq-question">
+                        <span>如何进行报修？维修响应时间是多久？</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>您可以通过以下方式报修：</p>
+                        <ul>
+                            <li><strong>电话报修：</strong>拨打物业服务中心电话 400-123-4567</li>
+                            <li><strong>微信报修：</strong>通过物业微信公众号提交报修申请</li>
+                            <li><strong>现场报修：</strong>直接到物业服务中心填写报修单</li>
+                        </ul>
+                        <p>维修响应时间：</p>
+                        <ul>
+                            <li><strong>紧急维修</strong>（如水管爆裂、停电等）：30分钟内响应</li>
+                            <li><strong>一般维修</strong>（如门窗损坏、灯具更换等）：24小时内响应</li>
+                            <li><strong>非紧急维修</strong>（如墙面修补等）：3个工作日内响应</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="faq-item" id="faq-4">
+                    <div class="faq-question">
+                        <span>哪些维修项目是免费的？哪些需要收费？</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>免费维修项目：</strong></p>
+                        <ul>
+                            <li>公共区域设施维修（楼道灯、电梯等）</li>
+                            <li>因公共管道问题导致的室内维修</li>
+                            <li>房屋主体结构问题</li>
+                            <li>保修期内的开发商遗留问题</li>
+                        </ul>
+                        
+                        <p><strong>收费维修项目：</strong></p>
+                        <ul>
+                            <li>个人原因导致的室内设施损坏</li>
+                            <li>装修过程中造成的损坏</li>
+                            <li>人为破坏的公共设施</li>
+                            <li>超出保修期的个人设施维修</li>
+                        </ul>
+                        <p>具体收费标准可咨询物业服务中心。</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 安全管理类问题 -->
+            <div class="faq-category" data-category="security">
+                <h3><i class="fas fa-shield-alt"></i> 安全管理</h3>
+                
+                <div class="faq-item" id="faq-5">
+                    <div class="faq-question">
+                        <span>小区门禁系统如何使用？</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>小区门禁系统使用说明：</p>
+                        <ul>
+                            <li><strong>业主/住户：</strong>使用门禁卡或手机APP二维码进出</li>
+                            <li><strong>访客：</strong>需要通过业主邀请或前台登记获得临时通行码</li>
+                            <li><strong>车辆：</strong>使用车牌识别系统自动开闸</li>
+                        </ul>
+                        <p>如门禁卡丢失或损坏，请及时到物业服务中心挂失并补办，补办费用为20元/张。</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" id="faq-6">
+                    <div class="faq-question">
+                        <span>小区监控系统覆盖哪些区域？</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>小区监控系统覆盖以下公共区域：</p>
+                        <ul>
+                            <li>所有出入口（人行和车行）</li>
+                            <li>地下停车场及各楼层</li>
+                            <li>电梯内部及前室</li>
+                            <li>公共走廊及楼梯间</li>
+                            <li>儿童游乐区及健身区</li>
+                            <li>物业服务中心前台</li>
+                        </ul>
+                        <p>监控录像保存时间为30天。如需要调取监控录像，需向物业服务中心提出书面申请，并说明事由。</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 公共设施类问题 -->
+            <div class="faq-category" data-category="facility">
+                <h3><i class="fas fa-swimming-pool"></i> 公共设施</h3>
+                
+                <div class="faq-item" id="faq-7">
+                    <div class="faq-question">
+                        <span>访客停车如何收费？</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>访客停车收费标准：</p>
+                        <ul>
+                            <li><strong>30分钟内：</strong>免费</li>
+                            <li><strong>30分钟-2小时：</strong>5元</li>
+                            <li><strong>2-8小时：</strong>10元</li>
+                            <li><strong>8-24小时：</strong>20元</li>
+                            <li><strong>超过24小时：</strong>按上述标准累计收费</li>
+                        </ul>
+                        <p>业主可为访客提前预约停车位，享受8折优惠。月租车位业主可领取访客停车券，每月限5张。</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" id="faq-8">
+                    <div class="faq-question">
+                        <span>健身房和游泳池的使用规则是什么？</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>健身房使用规则：</strong></p>
+                        <ul>
+                            <li>开放时间：6:00-22:00</li>
+                            <li>需穿着运动服装和运动鞋</li>
+                            <li>使用后请将器械归位</li>
+                            <li>12岁以下儿童需成人陪同</li>
+                        </ul>
+                        
+                        <p><strong>游泳池使用规则：</strong></p>
+                        <ul>
+                            <li>开放时间：9:00-12:00, 14:00-21:00（夏季）</li>
+                            <li>必须佩戴泳帽</li>
+                            <li>下水前请先淋浴</li>
+                            <li>儿童必须有成人陪同</li>
+                            <li>禁止患有传染性疾病者入内</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 其他问题 -->
+            <div class="faq-category" data-category="other">
+                <h3><i class="fas fa-ellipsis-h"></i> 其他问题</h3>
+                
+                <div class="faq-item" id="faq-9">
+                    <div class="faq-question">
+                        <span>如何联系物业服务中心？</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>您可以通过以下方式联系我们：</p>
+                        <ul>
+                            <li><strong>服务热线：</strong>400-123-4567（24小时）</li>
+                            <li><strong>办公电话：</strong>010-12345678（工作日8:30-17:30）</li>
+                            <li><strong>邮箱：</strong>service@property.com</li>
+                            <li><strong>微信公众号：</strong>某某物业</li>
+                            <li><strong>现场办公：</strong>物业服务中心（小区1号楼1层）</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="faq-item" id="faq-10">
+                    <div class="faq-question">
+                        <span>如何申请装修？有哪些注意事项？</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>装修申请流程：</p>
+                        <ol>
+                            <li>到物业服务中心领取《装修申请表》</li>
+                            <li>提交装修公司资质证明、施工图纸</li>
+                            <li>签订《装修管理协议》并缴纳装修押金</li>
+                            <li>办理施工人员出入证</li>
+                            <li>获得批准后方可开工</li>
+                        </ol>
+                        
+                        <p>装修注意事项：</p>
+                        <ul>
+                            <li>装修时间：工作日 8:00-12:00, 14:00-18:00，周末及节假日禁止噪音施工</li>
+                            <li>禁止拆改承重墙、梁、柱等主体结构</li>
+                            <li>禁止改变房屋外立面</li>
+                            <li>装修垃圾需袋装并放置在指定区域</li>
+                            <li>施工期间需做好安全防护措施</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 联系帮助 -->
+        <div class="help-section">
+            <h3>仍然没有找到答案？</h3>
+            <p>如果以上解答未能解决您的问题，请通过以下方式联系我们，我们将尽快为您提供帮助。</p>
+            
+            <div class="contact-options">
+                <a href="tel:400-123-4567" class="contact-option">
+                    <i class="fas fa-phone"></i>
+                    <span>拨打服务热线</span>
+                </a>
+                <a href="#" class="contact-option">
+                    <i class="fas fa-comments"></i>
+                    <span>在线客服</span>
+                </a>
+                <a href="" class="contact-option">
+                    <i class="fas fa-envelope"></i>
+                    <span>提交问题</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+   <!-- 页脚 -->
+   <footer class="footer">
+           <div class="container">
+               <div class="footer-content">
+                   <div class="footer-logo">
+                       <i class="fa fa-home"></i>
+                       <span>智慧物业</span>
+                       <p>打造智慧、安全、舒适的现代化社区</p>
+                       <div class="footer-social">
+                           <a href="#"><i class="fa fa-weixin"></i></a>
+                           <a href="#"><i class="fa fa-weibo"></i></a>
+                           <a href="#"><i class="fa fa-qq"></i></a>
+                       </div>
+                   </div>
+                   
+                   <div class="footer-links">
+                       <h4>快速链接</h4>
+                       <ul>
+                           <li><a href="#home">首页</a></li>
+                           <li><a href="#service">物业服务</a></li>
+                           <li><a href="#notice">小区公告</a></li>
+                           <li><a href="#fee">费用缴纳</a></li>
+                           <li><a href="#contact">联系我们</a></li>
+                       </ul>
+                   </div>
+                   
+                   <div class="footer-links">
+                       <h4>服务支持</h4>
+                       <ul>
+                           <li><a href="#">常见问题</a></li>
+                           <li><a href="#">业主手册</a></li>
+                           <li><a href="#">物业服务条款</a></li>
+                           <li><a href="#">投诉建议</a></li>
+                           <li><a href="#">紧急联系</a></li>
+                       </ul>
+                   </div>
+                   
+                   <div class="footer-contact">
+                       <h4>联系方式</h4>
+                       <p><i class="fa fa-map-marker"></i> 哈尔滨市宾西县宾西大学城9号哈尔滨信息工程学院</p>
+                       <p><i class="fa fa-phone"></i> 010-8888-7777</p>
+                       <p><i class="fa fa-envelope-o"></i> property@zhjy.com</p>
+                   </div>
+               </div>
+               
+               <div class="copyright">
+                   <p>© 2023 智慧物业有限公司 版权所有 | 京ICP备12345678号</p>
+               </div>
+           </div>
+       </footer>
+
+    <script>
+        // FAQ交互功能
+        document.addEventListener('DOMContentLoaded', function() {
+            // 问题展开/折叠功能
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                
+                question.addEventListener('click', () => {
+                    // 关闭其他打开的FAQ
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item && otherItem.classList.contains('active')) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    
+                    // 切换当前FAQ
+                    item.classList.toggle('active');
+                });
+            });
+            
+            // 分类筛选功能
+            const categoryBtns = document.querySelectorAll('.category-btn');
+            const faqCategories = document.querySelectorAll('.faq-category');
+            
+            categoryBtns.forEach(button => {
+                button.addEventListener('click', function() {
+                    // 移除所有按钮的active类
+                    categoryBtns.forEach(btn => btn.classList.remove('active'));
+                    
+                    // 为当前点击的按钮添加active类
+                    this.classList.add('active');
+                    
+                    const category = this.getAttribute('data-category');
+                    
+                    // 显示/隐藏FAQ分类
+                    faqCategories.forEach(categoryEl => {
+                        if (category === 'all' || categoryEl.getAttribute('data-category') === category) {
+                            categoryEl.style.display = 'block';
+                        } else {
+                            categoryEl.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // 热门问题点击跳转
+            const popularQuestions = document.querySelectorAll('.popular-question');
+            
+            popularQuestions.forEach(question => {
+                question.addEventListener('click', function() {
+                    const targetId = this.getAttribute('data-target');
+                    const targetElement = document.getElementById(targetId);
+                    
+                    if (targetElement) {
+                        // 关闭其他打开的FAQ
+                        faqItems.forEach(item => {
+                            if (item !== targetElement && item.classList.contains('active')) {
+                                item.classList.remove('active');
+                            }
+                        });
+                        
+                        // 确保目标分类可见
+                        const category = targetElement.closest('.faq-category').getAttribute('data-category');
+                        categoryBtns.forEach(btn => {
+                            if (btn.getAttribute('data-category') === category || btn.getAttribute('data-category') === 'all') {
+                                btn.click();
+                            }
+                        });
+                        
+                        // 打开目标FAQ
+                        targetElement.classList.add('active');
+                        
+                        // 滚动到目标位置
+                        targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    }
+                });
+            });
+            
+            
+            
+            // 模拟页面切换效果
+            const navLinks = document.querySelectorAll('.nav-links a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    if (!this.classList.contains('active') && this.getAttribute('href').endsWith('.html')) {
+                        e.preventDefault();
+                        const pageName = this.getAttribute('href').replace('.html', '');
+                        alert(`即将跳转到${getPageTitle(pageName)}页面`);
+                        // 实际应用中这里应该是页面跳转
+                        // window.location.href = this.getAttribute('href');
+                    }
+                });
+            });
+            
+            function getPageTitle(page) {
+                const pageTitles = {
+                    'index': '首页',
+                    'team': '物业团队',
+                    'service-hours': '服务时间详情',
+                    'complaint-process': '投诉与建议流程',
+                    'faq': '常见问题解答'
+                };
+                return pageTitles[page] || '未知页面';
+            }
+        });
+    </script>
+</body>
+</html>

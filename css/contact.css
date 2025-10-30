@@ -1,0 +1,846 @@
+ /* 全局样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+		
+		:root {
+		    --primary-color: #2c7be5;
+		    --secondary-color: #6c757d;
+		    --accent-color: #00d97e;
+		    --light-color: #f9f9f9;
+		    --dark-color: #333;
+		    --border-color: #e0e6ef;
+		    --shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+		}
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6em;
+            color: #333;
+            background-color: white;
+        }
+
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        a {
+            list-style:none;
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        li{
+            list-style:none;
+        }
+        /* 导航栏 */
+        .navbar {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            transition: all 0.3s ease;
+        }
+        
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+            font-weight: 700;
+            color: #165DFF;
+            transition: transform 0.3s ease;
+        }
+        
+        .logo:hover {
+            transform: scale(1.05);
+        }
+        
+        .logo i {
+            margin-right: 8px;
+            font-size: 24px;
+        }
+        
+        .main-nav {
+            display: flex;
+            gap: 30px;
+        }
+        
+        .main-nav a {
+            font-weight: 500;
+            color: #666;
+            transition: all 0.3s;
+            position: relative;
+            padding: 5px 0;
+        }
+        
+        .main-nav a.active,
+        .main-nav a:hover {
+            color: #165DFF;
+        }
+        
+        .main-nav a.active::after,
+        .main-nav a:hover::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #165DFF;
+            animation: underline 0.3s ease;
+        }
+        
+        @keyframes underline {
+            0% { width: 0; }
+            100% { width: 100%; }
+        }
+        
+        .user-area {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .ring {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background-color: #f0f5ff;
+            color: #165DFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+            cursor: pointer;
+            border: none;
+        }
+        
+        .ring:hover {
+            background-color: #e0ecff;
+            transform: rotate(15deg);
+        }
+        
+        .user-tx {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: transform 0.3s;
+        }
+        
+        .user-tx:hover {
+            transform: translateY(-2px);
+        }
+        
+        .user-tx img {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #e0ecff;
+            transition: border-color 0.3s;
+        }
+        
+        .user-tx:hover img {
+            border-color: #165DFF;
+        }
+        
+        .mobile-nav {
+            display: none;
+            flex-direction: column;
+            background-color: white;
+            border-top: 1px solid #f0f0f0;
+        }
+        
+        .mobile-nav a {
+            padding: 12px 20px;
+            border-bottom: 1px solid #f0f0f0;
+            color: #666;
+        }
+        
+        .mobile-nav a:hover {
+            background-color: #f0f5ff;
+            color: #165DFF;
+        }
+
+        /* 主内容区域 */
+        .main {
+            display: flex;
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .left {
+            flex: 2;
+            margin-right: 30px;
+        }
+
+        .right {
+            flex: 1;
+        }
+
+        .contact-card {
+            background-color: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, #165DFF, #409eff);
+            transition: left 0.5s ease;
+        }
+
+        .contact-card:hover::before {
+            left: 0;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .contact-card h3 {
+            color: #409eff;
+            border-bottom: 2px solid #409eff;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            font-size: 20px;
+            display: inline-block;
+        }
+
+        .contact-list li {
+            list-style: none;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+            transition: transform 0.3s;
+        }
+
+        .contact-list li:hover {
+            transform: translateX(5px);
+        }
+
+        .contact-list a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #409eff;
+            font-weight: bold;
+            min-width: 100px;
+            margin-right: 10px;
+            transition: color 0.3s;
+        }
+
+        .contact-list a:hover {
+            color: #165DFF;
+        }
+
+        .contact-list img {
+            width: 1em;
+            height: 1em;
+            margin-right: 5px;
+            transition: transform 0.3s;
+        }
+
+        .contact-list a:hover img {
+            transform: scale(1.2);
+        }
+
+        .contact-list p {
+            margin: 0;
+            color: #666;
+            line-height: 1.5em;
+        }
+
+        /* 留言区域 */
+        .contact-form{
+            background-color: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .contact-form:hover {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .contact-form h3 {
+            color: #409eff;
+            border-bottom: 2px solid #409eff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+            transition: color 0.3s;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+
+        .form-group input:focus, .form-group textarea:focus {
+            border-color: #409eff;
+            outline: none;
+            box-shadow: 0 0 5px rgba(64, 158, 255, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .form-group:focus-within label {
+            color: #409eff;
+        }
+
+        .submit {
+            background-color: #409eff;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .submit::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.5s;
+        }
+
+        .submit:hover::before {
+            left: 100%;
+        }
+
+        .submit:hover {
+            background-color: #337ecc;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 10px rgba(51, 126, 204, 0.3);
+        }
+
+        .submit:active {
+            transform: translateY(0);
+        }
+		
+		
+		
+		/* 添加表单验证样式 */
+		.form-group {
+		    position: relative;
+		}
+		
+		.error-message {
+		    color: #e74c3c;
+		    font-size: 12px;
+		    margin-top: 5px;
+		    display: none;
+		}
+		
+		.input-error {
+		    border-color: #e74c3c !important;
+		}
+		
+		.validation-message {
+		    position: fixed;
+		    top: 50%;
+		    left: 50%;
+		    transform: translate(-50%, -50%);
+		    background-color: rgba(231, 76, 60, 0.9);
+		    color: white;
+		    padding: 20px 40px;
+		    border-radius: 8px;
+		    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+		    z-index: 1001;
+		    display: none;
+		    text-align: center;
+		    font-size: 16px;
+		    max-width: 300px;
+		}
+
+        /* 地图区域 */
+        .map{
+            background-color: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .map:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .map h3 {
+            color: #409eff;
+            border-bottom: 2px solid #409eff;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+
+        .map-image {
+            overflow: hidden;
+            border-radius: 5px;
+            position: relative;
+        }
+
+        .map-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            transition: transform 0.5s ease;
+        }
+
+        .map:hover .map-image img {
+            transform: scale(1.05);
+        }
+		
+		.map-link {
+		    margin-top: 15px;
+		    text-align: center;
+		}
+		
+		.map-link a {
+		    display: inline-block;
+		    background-color: #409eff;
+		    color: white;
+		    border: none;
+		    padding: 12px 25px;
+		    font-size: 16px;
+		    border-radius: 4px;
+		    text-decoration: none;
+		    transition: background-color 0.3s ease;
+		}
+		
+		.map-link a:hover {
+		    background-color: #337ecc;
+		}
+
+        /* 服务承诺 */
+        .service-promise p {
+            margin-bottom: 10px;
+            line-height: 1.5em;
+            transition: all 0.3s;
+            padding: 5px;
+            border-radius: 3px;
+        }
+
+        .service-promise p:hover {
+            background-color: #f0f5ff;
+            transform: translateX(5px);
+        }
+
+        .service-promise strong {
+            color: #409eff;
+        }
+
+        /* 紧急联系方式 */
+        .emergency-contact .contact-list a {
+            color: red;
+            min-width: 70px;
+        }
+
+        .emergency-contact .contact-list li:hover {
+            animation: shake 0.5s;
+        }
+		
+		/* 子页面导航卡片 */
+		.contact-card {
+		    background-color: white;
+		    border-radius: 8px;
+		    box-shadow: var(--shadow);
+		    padding: 25px;
+		    margin-bottom: 30px;
+		}
+		
+		.contact-card h3 {
+		    color: var(--primary-color);
+		    margin-bottom: 20px;
+		    font-size: 1.3rem;
+		}
+		
+		.subpage-links {
+			margin-left: 20px;
+		    display: grid;
+		    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+		    gap: 15px;
+		}
+		
+		.subpage-link {
+		    display: flex;
+		    align-items: center;
+		    padding: 15px;
+		    background-color: var(--light-color);
+		    border-radius: 6px;
+		    text-decoration: none;
+		    color: var(--dark-color);
+		    transition: all 0.3s;
+		    border: 1px solid var(--border-color);
+		}
+		
+		.subpage-link:hover {
+		    background-color: #e8f2ff;
+		    transform: translateY(-3px);
+		    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		}
+		
+		.subpage-link i:first-child {
+		    margin-right: 12px;
+		    font-size: 1.2rem;
+		    color: var(--primary-color);
+		    width: 24px;
+		    text-align: center;
+		}
+		
+		.subpage-link span {
+		    flex-grow: 1;
+		    font-weight: 500;
+		}
+		
+		.subpage-link i:last-child {
+		    color: var(--secondary-color);
+		}
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-3px); }
+            75% { transform: translateX(3px); }
+        }
+
+        /* 页脚样式 */
+        .footer {
+            background-color: #1D2129;
+            color: white;
+            padding: 60px 0 20px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-logo {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .footer-logo .fa-home {
+            font-size: 24px;
+            margin-bottom: 10px;
+            transition: transform 0.5s;
+        }
+        
+        .footer-logo:hover .fa-home {
+            transform: rotateY(180deg);
+        }
+        
+        .footer-logo span {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        
+        .footer-logo p {
+            color: #999;
+            margin-bottom: 20px;
+        }
+        
+        .footer-social a {
+            display: inline-flex;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            transition: all 0.3s;
+        }
+        
+        .footer-social a:hover {
+            background-color: #165DFF;
+            transform: translateY(-5px);
+        }
+        
+        .footer-links h4,
+        .footer-contact h4 {
+            font-size: 16px;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-links h4::after,
+        .footer-contact h4::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background-color: #165DFF;
+            transition: width 0.3s;
+        }
+        
+        .footer-links:hover h4::after,
+        .footer-contact:hover h4::after {
+            width: 80px;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+            transition: transform 0.3s;
+        }
+        
+        .footer-links li:hover {
+            transform: translateX(5px);
+        }
+        
+        .footer-links a {
+            color: #999;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+        
+        .footer-contact p {
+            color: #999;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            transition: color 0.3s;
+        }
+        
+        .footer-contact p:hover {
+            color: white;
+        }
+        
+        .footer-contact i {
+            margin-right: 10px;
+            color: #165DFF;
+            transition: transform 0.3s;
+        }
+        
+        .footer-contact p:hover i {
+            transform: scale(1.2);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #999;
+            font-size: 14px;
+        }
+
+        /* 花和感谢 */
+        .flower-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+            display: none;
+            overflow: hidden;
+        }
+        
+        .flower {
+            position: absolute;
+            font-size: 60px;
+            animation: float 5s ease-in-out forwards;
+            opacity: 0;
+            transform-origin: center;
+            z-index: 9998;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+            filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.3));
+        }
+        
+        .flower-large {
+            font-size: 80px;
+            z-index: 9997;
+        }
+        
+        @keyframes float {
+            0% {
+                transform: translateY(100vh) rotate(0deg) scale(0.3);
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.9;
+            }
+            80% {
+                opacity: 0.9;
+            }
+            100% {
+                transform: translateY(-100px) rotate(360deg) scale(1);
+                opacity: 0;
+            }
+        }
+        
+        .thank-you-message {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            padding: 40px 60px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            z-index: 10000;
+            display: none;
+            font-size: 28px;
+            font-weight: bold;
+            color: white;
+            border: 3px solid white;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                transform: translate(-50%, -50%) scale(1);
+            }
+            50% {
+                transform: translate(-50%, -50%) scale(1.05);
+            }
+            100% {
+                transform: translate(-50%, -50%) scale(1);
+            }
+        }
+        
+        .thank-you-message p {
+            margin: 0;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        /* 新增动画效果 */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        .delay-1 {
+            animation-delay: 0.1s;
+        }
+
+        .delay-2 {
+            animation-delay: 0.2s;
+        }
+
+        .delay-3 {
+            animation-delay: 0.3s;
+        }
+
+        .delay-4 {
+            animation-delay: 0.4s;
+        }
+
+        .delay-5 {
+            animation-delay: 0.5s;
+        }
+
+        .delay-6 {
+            animation-delay: 0.6s;
+        }
+
+        .delay-7 {
+            animation-delay: 0.7s;
+        }
+
+        /* 滚动动画 */
+        .scroll-animate {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .scroll-animate.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* 加载动画 */
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255,255,255,.3);
+            border-radius: 50%;
+            border-top-color: #fff;
+            animation: spin 1s ease-in-out infinite;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
